@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website in Hugp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielramirez0/hugoPortfolio.git"
+  },
+  "keywords": [
+    "hugo",
+    "portfolio"
+  ],
+  "author": "Daniel Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielramirez0/hugoPortfolio/issues"
+  },
+  "homepage": "https://github.com/danielramirez0/hugoPortfolio#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "prettier-plugin-go-template": "^0.0.11"
+  }
+}
