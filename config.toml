@@ -1,4 +1,5 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Daniel's Portfolio"
-theme = "basic"
+# theme = "basic"
+theme = "bootstrap"
