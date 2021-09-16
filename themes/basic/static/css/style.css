@@ -26,13 +26,17 @@ nav > a {
   nav {
     flex-direction: row;
   }
-  .project-container {
+  .project-container,
+  .presentation-container {
     display: flex;
   }
-  .project-container .project-list {
+
+  .project-container .project-list,
+  .presentation-container .presentation-list {
     width: 20%;
   }
-  .project-container .project {
+  .project-container .project,
+  .presentation-container .presentation {
     flex: 1;
   }
 }

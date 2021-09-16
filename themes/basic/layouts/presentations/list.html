@@ -1,9 +1,9 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h2>
   {{ .Content }}
-  <section class="projects">
-    {{ range .Pages }}
-      <section class="project">
+  <section class="presentations">
+    {{ range (.Pages).ByDate }}
+      <section class="presentation">
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       </section>
     {{ end }}
