@@ -1,13 +1,13 @@
 ---
 title: 'Awesomeco'
 draft: false
+image: //via.placeholder.com/640x150
+alt_text: "Awesomeco screenshot" 
+summary: "Summary of the AwesomeCo project"
+tech_used: 
+- JavaScript
+- CSS
+- HTML
 ---
 
-![alt](//via.placeholder.com/640x150)
-
-A simple node.js terminal GUI application
-
-### Tech used
-
-- Node
-- JavaScript
+Description of the Awesomeco project...
