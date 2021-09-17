@@ -8,3 +8,5 @@ theme = "basic"
 [params]
     author = "Daniel Ramirez"
     description = "My Portfolio site"
+    gh_url= "https://api.github.com/users"
+    gh_user= "danielramirez0"
