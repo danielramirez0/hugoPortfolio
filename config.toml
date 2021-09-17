@@ -1,5 +1,10 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Daniel's Portfolio"
+googleAnalytics = "UA-286825744"
 # theme = "basic"
 theme = "basic"
+
+[params]
+    author = "Daniel Ramirez"
+    description = "My Portfolio site"
