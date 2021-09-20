@@ -3,6 +3,12 @@ title: "First Post"
 date: 2021-09-20T07:47:42-07:00
 draft: false
 author: Daniel Ramirez
+categories:
+ - Personal
+ - Thoughts
+tags:
+ - software
+ - html
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliqua.
