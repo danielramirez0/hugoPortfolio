@@ -17,7 +17,8 @@
         </span>
       </p>
       <p>
-        Reading time: {{ math.Round (div (countwords .Content) 200.0) }}
+        Reading time:
+        {{ math.Round (div (countwords .Content) 200.0) }}
         minutes.
       </p>
     </header>
@@ -27,6 +28,10 @@
   </section>
   <section class="comments">
     <h3>Comments</h3>
-    {{ template "_internal/disqus.html" . }}
+    {{ if .Params.disableComments }}
+      <p>Comments are disabled for this post</p>
+    {{ else }}
+      {{ template "_internal/disqus.html" . }}
+    {{ end }}
   </section>
 {{ end }}

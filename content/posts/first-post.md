@@ -11,6 +11,7 @@ categories:
 tags:
   - software
   - html
+disableComments: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et dolore magna aliqua.
