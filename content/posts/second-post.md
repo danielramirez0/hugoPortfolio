@@ -1,6 +1,6 @@
 ---
-title: "First Post"
-date: 2021-09-20T07:47:42-07:00
+title: "Second Post"
+date: 2021-09-20T11:31:37-07:00
 draft: false
 author: Daniel Ramirez
 year: "2021"
