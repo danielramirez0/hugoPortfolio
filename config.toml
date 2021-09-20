@@ -4,6 +4,7 @@ title = "Daniel's Portfolio"
 googleAnalytics = "UA-286825744"
 # theme = "basic"
 theme = "basic"
+disqusShortname = "danielramirez0"
 Paginate = 10
 
 [params]

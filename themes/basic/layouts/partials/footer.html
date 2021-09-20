@@ -1,7 +1,7 @@
 <footer>
   <small>Copyright {{ now.Format "2006" }} {{ .Site.Params.author }}.</small>
   <h3>Social Media</h3>
-    {{ range .Site.Data.socialmedia.accounts }}
-      <a href="{{ .url }}">{{ .name }}</a>
-    {{ end }}
+  {{ range .Site.Data.socialmedia.accounts }}
+    <a href="{{ .url }}">{{ .name }}</a>
+  {{ end }}
 </footer>
