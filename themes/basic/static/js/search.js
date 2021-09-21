@@ -25,32 +25,36 @@ axios.get('/search/index.json').then((response) => {
 SearchApp.searchButton.addEventListener('click', search);
 
 function search() {
-  let searchText = SearchApp.searchField.value;
-  searchText = searchText
-    .split(' ')
-    .map((word) => {
-      return word + '*';
-    })
-    .join(' ');
-  if (SearchApp.allwords.checked) {
+  if (SearchApp.searchField.value != '') {
+    let searchText = SearchApp.searchField.value;
     searchText = searchText
       .split(' ')
       .map((word) => {
-        return '+' + word;
+        return word + '*';
       })
       .join(' ');
-  }
-  let resultList = SearchApp.searchIndex.search(searchText);
-  let list = [];
-  let results = resultList.map((entry) => {
-    SearchApp.searchData.results.filter((d) => {
-      if (entry.ref == d.href) {
-        list.push(d);
-      }
+    if (SearchApp.allwords.checked) {
+      searchText = searchText
+        .split(' ')
+        .map((word) => {
+          return '+' + word;
+        })
+        .join(' ');
+    }
+    let resultList = SearchApp.searchIndex.search(searchText);
+    let list = [];
+    let results = resultList.map((entry) => {
+      SearchApp.searchData.results.filter((d) => {
+        if (entry.ref == d.href) {
+          list.push(d);
+        }
+      });
     });
-  });
 
-  display(list);
+    display(list);
+  }else{
+      SearchApp.output.innerHTML = 'Enter a search term'
+  }
 }
 
 function display(list) {
