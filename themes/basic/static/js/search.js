@@ -2,6 +2,7 @@
 window.SearchApp = {
   searchField: document.getElementById('searchField'),
   searchButton: document.getElementById('searchButton'),
+  allwords: document.getElementById('allwords'),
   output: document.getElementById('output'),
   searchData: {},
   searchIndex: {},
@@ -31,6 +32,14 @@ function search() {
       return word + '*';
     })
     .join(' ');
+  if (SearchApp.allwords.checked) {
+    searchText = searchText
+      .split(' ')
+      .map((word) => {
+        return '+' + word;
+      })
+      .join(' ');
+  }
   let resultList = SearchApp.searchIndex.search(searchText);
   let list = [];
   let results = resultList.map((entry) => {
