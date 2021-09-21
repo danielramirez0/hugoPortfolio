@@ -10,17 +10,7 @@ footer {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-nav > a {
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
+@import 'navbar';
 
 .oss {
   display: flex;
@@ -79,9 +69,6 @@ a.tag {
 }
 
 @media only screen and (min-width: 768px) {
-  nav {
-    flex-direction: row;
-  }
   .project-container,
   .presentation-container {
     display: flex;

@@ -19,8 +19,9 @@
       {{ .Site.Params.description }}
     {{- end -}}"
   />
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "syntax.css" | relURL }}" />
+  {{ $css := resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ `syntax.css` | relURL }}" />
   <!-- Used to incorporate Google Analytics -->
   <!-- {{ template "_internal/google_analytics_async.html" . }} -->
   {{ range .AlternativeOutputFormats }}
