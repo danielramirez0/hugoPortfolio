@@ -10,6 +10,8 @@ window.SearchApp = {
 axios.get('/search/index.json').then((response) => {
   SearchApp.searchData = response.data;
   SearchApp.searchIndex = lunr(function () {
+    this.pipeline.remove(lunr.stemmer);
+    this.searchPipeline.remove(lunr.stemmer);
     this.ref('href');
     this.field('title');
     this.field('body');
@@ -23,8 +25,12 @@ SearchApp.searchButton.addEventListener('click', search);
 
 function search() {
   let searchText = SearchApp.searchField.value;
-
-  searchText = searchText.split(" ").map( word => {return word + "*"}).join(" ")
+  searchText = searchText
+    .split(' ')
+    .map((word) => {
+      return word + '*';
+    })
+    .join(' ');
   let resultList = SearchApp.searchIndex.search(searchText);
   let list = [];
   let results = resultList.map((entry) => {
