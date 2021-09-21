@@ -8,4 +8,12 @@
       {{ end }}
     </ul>
   </section>
+  <section>
+    <h3>Featured Post</h3>
+    <ul>
+      {{ range first 1 (where .Site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
 {{ end }}
