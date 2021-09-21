@@ -26,6 +26,17 @@
   <section class="body">
     {{ .Content }}
   </section>
+  <section class="related">
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
+      <h3>Related Pages</h3>
+      <ul>
+        {{ range . }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
   <section class="comments">
     <h3>Comments</h3>
     {{ if .Params.disableComments }}

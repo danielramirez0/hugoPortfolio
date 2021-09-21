@@ -8,6 +8,8 @@ tech_used:
   - JavaScript
   - CSS
   - HTML
+keywords:
+  - jabberwrocky
 ---
 
 Description of the jabberwocky project...
