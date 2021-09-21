@@ -23,6 +23,8 @@ SearchApp.searchButton.addEventListener('click', search);
 
 function search() {
   let searchText = SearchApp.searchField.value;
+
+  searchText = searchText.split(" ").map( word => {return word + "*"}).join(" ")
   let resultList = SearchApp.searchIndex.search(searchText);
   let list = [];
   let results = resultList.map((entry) => {
