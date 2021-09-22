@@ -2,9 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio Website in Hugp",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo --cleanDestinationDir",
+    "hugo-server": "hugo server --disableFastRender"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,13 @@
   "homepage": "https://github.com/danielramirez0/hugoPortfolio#readme",
   "devDependencies": {
     "prettier": "^2.3.2",
-    "prettier-plugin-go-template": "^0.0.11"
+    "prettier-plugin-go-template": "^0.0.11",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "lunr": "^2.3.9",
+    "ulid": "^2.3.0"
   }
 }
