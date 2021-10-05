@@ -25,3 +25,11 @@ pygmentsUseClasses = true
     month = "month"
     tag = "tags"
     category = "categories"
+
+[deployment]
+  [[deployment.targets]]
+  name = "prod"
+  URL = "s3://bph-pp-hugoprod1?region=us-east-1"
+  [[deployment.matchers]]
+  pattern = "^.+\\.(html|xml|js|css)$"
+  gzip = true
