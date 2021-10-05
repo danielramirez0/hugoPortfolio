@@ -1,4 +1,4 @@
-baseURL = 'http://danielramirez0.com/'
+baseURL = 'https://danielramirez0.com/'
 languageCode = 'en-us'
 title = "Daniel's Portfolio"
 googleAnalytics = "UA-286825744"
