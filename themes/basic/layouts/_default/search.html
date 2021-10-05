@@ -7,9 +7,11 @@
   <div id="output">
     <p>Waiting for search input</p>
   </div>
-  {{ $lunr := resources.Get "js/lunr.js" }}
+  {{/* {{ $lunr := resources.Get "js/lunr.js" }}
   {{ $axios := resources.Get "js/axios.js" }}
   {{ $search := resources.Get "js/search.js" }}
   {{ $libs := slice $lunr $axios $search }}
-  {{ $js := $libs | resources.Concat "js/app.js" | minify | fingerprint }}  <script src="{{ $js.RelPermalink }}"></script>
+  {{ $js := $libs | resources.Concat "js/app.js" | minify | fingerprint }}  <script src="{{ $js.RelPermalink }}"></script>  */}}
+  {{ $js := resources.Get "js/app.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}
