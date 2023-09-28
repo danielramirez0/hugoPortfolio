@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio Website in Hugp",
+  "description": "Portfolio Website in Hugo",
   "private": true,
   "main": "index.js",
   "scripts": {
