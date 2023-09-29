@@ -6,14 +6,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all webpack hugo-build",
+    "build": "npm-run-all hugo-build",
     "hugo-build": "hugo --cleanDestinationDir",
     "hugo-server": "hugo server --disableFastRender",
-    "webpack": "webpack",
-    "webpack-watch": "webpack --watch",
     "hugo-deploy": "hugo deploy",
-    "deploy": "npm-run-all build hugo-deploy",
-    "dev": "npm-run-all webpack --parallel webpack-watch hugo-server"
+    "deploy": "npm-run-all build hugo-deploy"
   },
   "repository": {
     "type": "git",
