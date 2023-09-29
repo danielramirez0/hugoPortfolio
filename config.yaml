@@ -255,17 +255,22 @@ params:
           url: "https://www.unomaha.edu/"
         date: "2013 - 2015"
         GPA: "3.9"
+      - title: "Associates of Persian Studies"
+        school:
+          name: "Defense Language Institute, Foreign Language Center"
+          url: "https://www.dliflc.edu/"
+        date: "2011 - 2012"
+        GPA: "4.0"
         # content: |-
           # lorem
         # featuredLink:
           # enable: true
           # name: "My academic record"
           # url: "https://example.com"
-  #TODO FROM HERE
   # Achievements
   achievements:
     enable: true
-    # title: "Custom Name"
+    title: "Certifications"
     items:
       - title: Google kickstart runner
         content: I solved all problems with optimal solution.
