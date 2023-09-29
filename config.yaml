@@ -273,24 +273,20 @@ params:
   # Achievements
   achievements:
     enable: true
-    title: "Certifications"
+    title: "Certifications and Training"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievment.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievment.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: Certified Information Systems Security Professional
+        content: Security Industry Professional Certification
+        url: https://my.isc2.org/
+        image: /images/cissp-cert.png
+      - title: Dev Code Camp Completion Certificate
+        content: Web developer boot camp focusing on MERN stack.
+        url: https://devcodecamp.com/
+        image: /images/dcc-web-dev-cert.png
+      - title: Dev Code Camp Completion Certificate
+        content: Software developer boot camp using C#, .NET, Python, Django, and MERN stack.
+        url: https://devcodecamp.com/
+        image: /images/dcc-software-dev-cert.png
 
   # projects
   projects:
