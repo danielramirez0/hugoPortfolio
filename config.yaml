@@ -154,7 +154,7 @@ params:
     content: |-
       I am a software engineer with a passion for web development, platform engineering, and devops automation. My background is quite diverse with education and certifications in full-stack web development, cyber security, information system architecture, network design, and automation. I leverage my unique experience to design secure, optimal, and automated software delivery solutions, build dynamic web applications, and more. I have a strong interest in platforms and leveraging the power of the cloud-native design. I am currently working as a full-stack software engineer at [VMware Tanzu](https://tanzu.vmware.com/tanzu). 
 
-      I am currently building an image analysis application which uses machine learning to and organize images automatically. You can check out the progress [here](#WIP)
+      I am currently building an image analysis application which uses machine learning to organize images automatically. You can check out the progress [here](#WIP)
 
     skills:
       enable: true
