@@ -162,7 +162,7 @@ params:
       items:
         - "HTML/CSS"
         - "JavaScript"
-        - "MongoDB/DynamoDB"
+        - "MongoDB"
         - "Express"
         - "React"
         - "Node"
