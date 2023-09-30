@@ -139,7 +139,7 @@ params:
         - icon: fab fa-github
           url: https://github.com/danielramirez0
         - icon: fab fa-twitter
-          url: https://example.com
+          url: https://twitter.com/danramirez0
         - icon: fab fa-linkedin-in
           url: https://linkedin.com/in/daniel-ramirez-243b8ba8
       # customIcons:
@@ -359,11 +359,10 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/danielramirez0
+      linkedin: https://linkedin.com/in/daniel-ramirez-243b8ba8
+      twitter: https://twitter.com/danielramirez0
+      instagram: https://instagram.com/0danielramirez
 
   # List pages like blogs and posts
   listPages:
