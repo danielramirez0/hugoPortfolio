@@ -74,11 +74,11 @@
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
-                {{/*  <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Site.Params.hostName }}&title={{ .Title }}&summary={{ .Params.description }}&source={{ .Permalink | absURL }}">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
-                </li>  */}}
+                </li>
                 <li class="list-inline-item text-center">
                   <a target="_blank" href='mailto:?subject={{ .Title }}&amp;body={{ .Site.Params.terms.emailText | default "Check out this site" }} {{ .Site.Params.hostName }}{{ .Permalink | absURL }}'>
                     <i class="fa fa-envelope"></i>
