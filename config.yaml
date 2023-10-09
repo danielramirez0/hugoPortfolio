@@ -131,7 +131,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/docs/resume.pdf"
+      url: "/docs/daniel-ramirez.pdf"
       download: true
       newPage: false
     socialLinks:
